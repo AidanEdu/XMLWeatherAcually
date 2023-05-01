@@ -117,7 +117,8 @@ namespace XMLWeather
             reader.ReadToFollowing("humidity");
             days[0].humidity = reader.GetAttribute("value");
 
-            reader.ReadToFollowing("weather"); 
+            reader.ReadToFollowing("weather");
+            days[0].currentConditions = reader.GetAttribute("value");
             days[0].currentIcon = reader.GetAttribute("icon");
 
             reader.ReadToFollowing("lastupdate");

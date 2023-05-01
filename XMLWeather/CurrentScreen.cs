@@ -80,7 +80,7 @@ namespace XMLWeather
             //breaks down the infomation, formats it then displays acounting for timezone
             sunriseLabel.Text = $"Sunrise:                    {Convert.ToDouble(Form1.days[0].sunRise.Substring(11, 2)) + Convert.ToDouble(Form1.days[0].timeZone)/3600}:{Form1.days[0].sunRise.Substring(14,2)}am";
             sunsetLabel.Text =  $"Sunset:                     {12 - Convert.ToDouble(Form1.days[0].sunSet.Substring(11, 2)) + Convert.ToDouble(Form1.days[0].timeZone) / 3600}:{Form1.days[0].sunSet.Substring(14, 2)}pm";
-            
+            currentConditionsLabel.Text = (Form1.days[0].currentConditions); 
 
             //displys the last updated time, else statment is for time transeding hours ex, updated 3:40 displayed 4:00
             if (DateTime.Now.Hour == Convert.ToDouble(Form1.days[0].lastUpdate.Substring(11, 2)) - 4)
