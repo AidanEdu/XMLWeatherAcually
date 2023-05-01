@@ -166,14 +166,15 @@ namespace XMLWeather
             searchLabel.ForeColor = def;
             backColorLabel.BackColor = Color.FromArgb(200, def);
 
+            //switches info button
             if (def == Color.White)
             {
-                pictureBox1.Image = Image.FromFile(Application.StartupPath + $"/Resources/8201.png");
+                pictureBox1.Image = Image.FromFile(Application.StartupPath + $"/Resources/Info-Button.png");
 
             }
             else
             {
-                pictureBox1.Image = Image.FromFile(Application.StartupPath + $"/Resources/Info-Button.png");
+                pictureBox1.Image = Image.FromFile(Application.StartupPath + $"/Resources/8201.png");
             }
 
             this.BackColor = opposite; 
